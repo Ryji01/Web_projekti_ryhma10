@@ -1,12 +1,72 @@
+/* Sisällön muokkausta */
+
+body {
+    background-image: url(../img/tausta.png);
+    background-size: 20em;
+}
+.back {
+    background-color: #B0CE88;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1px;
+    /*border: 2px solid #4C763B;
+    border-top: 0px;
+    border-bottom: 0px;*/
+    box-shadow: inset 0px 0px 5px 1px #4C763B;
+}
+
+.crow {
+    display: flex;
+    column-gap: 10px;
+}
+
 .col {
-    background-color: peru;
-    border: 1px solid brown;
-    height: 300px;
-    column-gap: 50px;
+    background-color: #F7C85C;
+    border: 1px solid #7FB77E;
+    height: 300px; 
+    border-radius: 3px;
+    transition: 0.2s ease;
 }
-.col :hover {
-    font-size: larger;
+
+.col:hover{
+    box-shadow: 2px 5px 5px 0px #222222;
+    scale: 1.01;
 }
+
+.col h1 {
+    font-size: 24px;
+    transition: 0.2s ease;
+}
+
+.secret {
+    display: none;
+    font-size: 16px;
+}
+
+.col img {
+    height: 100px;
+    transition: 0.2s ease;
+
+}
+
+.col:hover h1{
+    font-size: 32px;
+
+}
+
+.col:hover .secret{
+    display: block;
+
+}
+
+.col:hover img {
+    height: 130px;
+
+}
+
 .content {
     text-align: center;
 }
+
+/* sisällön muokkauksen loppu */
+
